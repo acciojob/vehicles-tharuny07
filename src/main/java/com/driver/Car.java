@@ -74,11 +74,11 @@ public class Car extends Vehicle {
         this.type=type;
         this.seats=seats;
         //Hint: Car extends Vehicle
-        currentGear=1;
+      setCurrentGear(1);
     }
 
     public void changeGear(int newGear){
-        currentGear=newGear;
+       setCurrentGear(newGear);
         System.out.println("changeGear method called - The gear is changed to: " + currentGear);
     }
 
